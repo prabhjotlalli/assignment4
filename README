@@ -1,0 +1,6 @@
+Every project here has 1 mistake in it to fix.
+
+For every project, apply the namespace and switch to that namespace before trying to debug.
+
+Once you have found every mistake, hand in the diff patch. To create a diff patch run:
+`git diff > assignment4.patch`

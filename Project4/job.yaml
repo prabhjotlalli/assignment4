@@ -1,0 +1,13 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: project4
+  namespace: project4
+spec:
+  template:
+    spec:
+      containers:
+      - name: hello
+        image: busybox:1.28.9
+        command: ['sh', '-c', 'echo "Hello Class!" && sleep 3600']
+      restartPolicy: OnFailure
